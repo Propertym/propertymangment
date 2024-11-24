@@ -1,0 +1,113 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: #ffa500; /* Orange color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+header p {
+    font-size: 24px;
+}
+
+/* Main Content */
+main {
+    padding: 50px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    color: #ffa500; /* Orange color */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+<nav>
+    <div class="logo">
+        <img src="https://i.ibb.co/yWdnhmK/ProMG.png" alt="ProMG">
+    </div>
+    <ul class="nav-links">
+        <li><a href="#property-management">Property Management</a></li>
+        <li><a href="#airbnb-hosting">Airbnb Hosting</a></li>
+        <li><a href="#seasonal-maintenance">Seasonal Maintenance</a></li>
+        <li><a href="#specialized-services">Specialized Services</a></li>
+        <li><a href="#handyman-services">Handyman Services</a></li>
+        <li><a href="#tech-services">Tech & Automation</a></li>
+    </ul>
+</navnav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+main {
+    margin-top: 70px; /* Adjust based on the nav height */
+}
+.nav-links a.active {
+    text-decoration: underline;
+    color: #ff5733; /* Slightly different color for active links */
+}
